@@ -3,7 +3,7 @@ from django.db import models
 class Book(models.Model):
     title = models.CharField(max_length=100)
     author = models.CharField(max_length=100)
-    price = models.IntergerField()
+    price = models.IntegerField()
     description = models.TextField()
     published_at = models.DateField()
     
