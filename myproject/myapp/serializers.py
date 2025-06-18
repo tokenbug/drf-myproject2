@@ -20,7 +20,7 @@ class BookSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Book
-        fields = ['id', 'title', 'published_at', 'images', 'uploaded_images']
+        fields = ['id', 'title', 'published_at', 'images', 'uploaded_images', 'author']
 
     def create(self, validated_data):
         image_files = validated_data.pop('images', [])
